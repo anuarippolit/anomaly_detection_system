@@ -1,7 +1,7 @@
 from src.preprocessing import preprocess_data
 from src.isolation_forest import train_isolation_forest
 # from src.oneclass_svm import train_oneclass_svm
-# from src.autoencoder import train_autoencoder
+from src.autoencoder import train_autoencoder
 
 
 def main() -> None:
@@ -13,6 +13,9 @@ def main() -> None:
 
     # train_oneclass_svm()
     # train_autoencoder()
+
+    print("Training Autoencoder")
+    train_autoencoder()
 
     print("Pipeline finished. Results saved to results/metrics.csv")
 
